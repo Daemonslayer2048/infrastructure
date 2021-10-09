@@ -1,11 +1,9 @@
 locals {
   namecheap_vars = yamldecode(sops_decrypt_file("${get_parent_terragrunt_dir()}/common_vars/namecheap_vars.sops.yaml"))
-  aws_vars       = yamldecode(sops_decrypt_file("${get_parent_terragrunt_dir()}/common_vars/aws_vars.sops.yaml"))
 }
 
 inputs = {
   namecheap = local.namecheap_vars.namecheap
-  aws       = local.aws_vars.aws
 }
 
 generate "backend" {
