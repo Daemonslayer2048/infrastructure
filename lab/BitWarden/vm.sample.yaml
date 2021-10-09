@@ -1,0 +1,13 @@
+template-name: "CentOS-Stream-8"
+node: "prox2"
+vm-id: 204
+vm-name: "warden"
+cpu: 4
+mem: 4096
+disk0-size: "100G"
+tags: "BitWarden"
+unifi-note: "BitWarden VM"
+desc: |
+  ## BitWarden
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.

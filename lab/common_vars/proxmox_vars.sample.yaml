@@ -1,0 +1,4 @@
+proxmox:
+  user: root@pam
+  pass:
+  url: https://prox1.main.lan:8006/api2/json

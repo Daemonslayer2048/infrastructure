@@ -1,0 +1,13 @@
+template-name: "CentOS-Stream-8"
+node: "prox1"
+vm-id: 207
+vm-name: "cloud"
+cpu: 4
+mem: 4096
+disk0-size: "100G"
+tags: "NextCloud"
+unifi-note: "NextCloud VM"
+desc: |
+  ## NextCloud
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.

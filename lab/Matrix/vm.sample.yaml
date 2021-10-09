@@ -1,0 +1,13 @@
+template-name: "CentOS-Stream-8"
+node: "prox1"
+vm-id: 205
+vm-name: "matrix"
+cpu: 4
+mem: 4096
+disk0-size: "100G"
+tags: "Matrix"
+unifi-note: "Matrix VM"
+desc: |
+  ## Matrix
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.

@@ -1,0 +1,24 @@
+template-name: "CentOS-Stream-8"
+node: "prox1"
+vm-id: 200
+vm-name: "caddy"
+cpu: 4
+mem: 4096
+disk0-size: "100G"
+tags: "Caddy"
+unifi-note: "Caddy VM"
+port_forwards:
+  - name: "Test Caddy Proxy Port 80"
+    dst_port: "80"
+    fwd_port: "80"
+    protocol: "tcp_udp"
+    log: true
+  - name: "Test Caddy Proxy Port 443"
+    dst_port: "443"
+    fwd_port: "443"
+    protocol: "tcp_udp"
+    log: true
+desc: |
+  ## Caddy
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.

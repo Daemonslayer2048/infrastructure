@@ -1,0 +1,13 @@
+template-name: "CentOS-Stream-8"
+node: "prox1"
+vm-id: 203
+vm-name: "hass"
+cpu: 4
+mem: 4096
+disk0-size: "100G"
+tags: "HomeAssistant"
+unifi-note: "HomeAssistant VM"
+desc: |
+  ## Homeassistant
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.

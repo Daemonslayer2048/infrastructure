@@ -1,0 +1,4 @@
+unifi:
+  user: 
+  pass:
+  url: https://unifi.home.lan:8443

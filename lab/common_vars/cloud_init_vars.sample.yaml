@@ -1,0 +1,5 @@
+cloud_init:
+  user:
+  pass:
+  ssh_keys: |
+    ssh-rsa AAAABdzfghbdfgnbfncghmghmgmgh>

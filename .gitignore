@@ -4,6 +4,8 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
+**.terragrunt-cache
 
 # Crash log files
 crash.log
@@ -27,3 +29,10 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Project Specific
+envs.sh
+*.sops.*
+common_vars.yaml
+vm.yaml
+terragrunt-debug*

@@ -1,0 +1,13 @@
+template-name: "CentOS-Stream-8"
+node: "prox2"
+vm-id: 210
+vm-name: "graylog"
+cpu: 4
+mem: 8192
+disk0-size: "100G"
+tags: "Graylog"
+unifi-note: "Graylog VM"
+desc: |
+  ##Graylog
+  Deployed by Terragrunt/Terraform.
+  Provisioned with Ansible.
