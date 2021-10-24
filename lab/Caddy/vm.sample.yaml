@@ -6,6 +6,7 @@ cpu: 4
 mem: 4096
 disk0-size: "100G"
 tags: "Caddy"
+pool: "Services"
 unifi-note: "Caddy VM"
 port_forwards:
   - name: "Test Caddy Proxy Port 80"

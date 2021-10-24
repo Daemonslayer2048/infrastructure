@@ -6,6 +6,7 @@ cpu: 4
 mem: 4096
 disk0-size: "100G"
 tags: "Matrix"
+pool: "Services"
 unifi-note: "Matrix VM"
 desc: |
   ## Matrix

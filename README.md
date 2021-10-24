@@ -47,3 +47,15 @@ Each Terraform module will require its own set of variables but most are fairly 
 
 ## To-Do
 - Build Inventory script
+- Replace All VMs
+  - BitWarden
+  - GitLab
+  - UniFI
+  - Mumble
+  - Steamserver
+  - Graylog
+  - InfluxDB
+  - Keycloak
+  - Nexus OSS
+  - Wazuh
+  - Kuma

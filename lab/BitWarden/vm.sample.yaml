@@ -1,11 +1,12 @@
 template-name: "CentOS-Stream-8"
-node: "prox2"
-vm-id: 204
+node: "prox1"
+vm-id: 201
 vm-name: "warden"
 cpu: 4
 mem: 4096
 disk0-size: "100G"
 tags: "BitWarden"
+pool: "Services"
 unifi-note: "BitWarden VM"
 desc: |
   ## BitWarden
