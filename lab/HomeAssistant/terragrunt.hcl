@@ -1,5 +1,5 @@
 terraform {
-  source = "github.com/Daemonslayer2048/terraform-infrastructure-modules.git//proxied-vm?ref=v0.3.0"
+  source = "github.com/Daemonslayer2048/terraform-infrastructure-modules.git//proxied-vm?ref=v0.4.0"
 }
 
 dependencies {

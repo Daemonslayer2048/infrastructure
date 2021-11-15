@@ -7,6 +7,11 @@ mem: 4096
 disk0-size: "100G"
 tags: "BitWarden"
 pool: "Services"
+tags:
+  - key: "role"
+    value: "BitWarden"
+  - key: "timezone"
+    value: "America/Alaska"
 unifi-note: "BitWarden VM"
 desc: |
   ## BitWarden

@@ -1,5 +1,9 @@
 terraform {
-  source = "github.com/Daemonslayer2048/terraform-infrastructure-modules.git//external-vm?ref=v0.4.0"
+  source = "github.com/Daemonslayer2048/terraform-infrastructure-modules.git//public-vm?ref=v0.4.0"
+}
+
+dependencies {
+  paths = ["../Caddy"]
 }
 
 locals {
@@ -11,7 +15,7 @@ include "root" {
   path = find_in_parent_folders("global.hcl")
 }
 
-prevent_destroy = true
+#prevent_destroy = true
 generate = local.lab_vars.generate
 
 inputs = merge(

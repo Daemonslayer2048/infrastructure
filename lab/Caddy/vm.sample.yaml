@@ -5,7 +5,11 @@ vm-name: "caddy"
 cpu: 4
 mem: 4096
 disk0-size: "100G"
-tags: "Caddy"
+tags:
+  - key: "role"
+    value: "Caddy"
+  - key: "timezone"
+    value: "America/Alaska"
 pool: "Services"
 unifi-note: "Caddy VM"
 port_forwards:

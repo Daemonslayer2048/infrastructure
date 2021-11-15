@@ -1,18 +1,25 @@
 template-name: "CentOS-Stream-8"
 node: "prox1"
-vm-id: 205
-vm-name: "matrix"
+vm-id: 207
+vm-name: "murmur"
 cpu: 4
 mem: 4096
 disk0-size: "100G"
 tags:
   - key: "role"
-    value: "Matrix"
+    value: "Mumble"
   - key: "timezone"
     value: "America/Alaska"
 pool: "Services"
-unifi-note: "Matrix VM"
+unifi-note: "Mumble VM"
+port_forwards:
+  - name: "Mumble Chat Port Forward"
+    dst_port: "64738"
+    fwd_port: "64738"
+    protocol: "tcp_udp"
+    enabled: true
+    log: true
 desc: |
-  ## Matrix
+  ## Mumble
   Deployed by Terragrunt/Terraform.
   Provisioned with Ansible.

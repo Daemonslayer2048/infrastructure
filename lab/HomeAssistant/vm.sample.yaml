@@ -5,7 +5,11 @@ vm-name: "hass"
 cpu: 4
 mem: 4096
 disk0-size: "100G"
-tags: "HomeAssistant"
+tags:
+  - key: "role"
+    value: "HomeAssistant"
+  - key: "timezone"
+    value: "America/Denver"
 pool: "Services"
 unifi-note: "HomeAssistant VM"
 desc: |
