@@ -39,23 +39,25 @@ All variable files have a sample file in this repo with comments (if not explici
 Each Terraform module will require its own set of variables but most are fairly self explanatory. Please see the samples
 
 ## Scripts  
-- inventory.sh (Not built)
-  - Used to build an ansible inventory file. This inventory file is intended to be used by the repo [here](https://github.com/Daemonslayer2048/infrastructure-plays)
+- ansible_inventory.sh  
+  Used to build an ansible inventory file. This inventory file is intended to be used by the repo [here](https://github.com/Daemonslayer2048/infrastructure_plays). This will produce an output like below:  
+  ``` yaml
+  all:
+    children:
+      Caddy:
+        hosts:
+          - 192.168.1.200:
+            hostname: caddy
+            domain: infra.lan
+            dns:
+              searchdomains:
+                - infra.lan
+              nameservers:
+                - 192.168.10.2
+                - 192.168.10.3
+            timezone: America/Alaska
+  ```  
+  All tags on a vm will be placed as a key value pair for the host, for example timezone was set as a tag for the VM in the module. The role tag will be ommited as that is used for setting the groups. 
 
 ## Notes
 - Cloud-Init templates can be built easily but a [repo](https://github.com/Daemonslayer2048/proxmox-cloud-init-builder) has already been made to aid in creating them.  
-
-## To-Do
-- Build Inventory script
-- Replace All VMs
-  - BitWarden
-  - GitLab
-  - UniFI
-  - Mumble
-  - Steamserver
-  - Graylog
-  - InfluxDB
-  - Keycloak
-  - Nexus OSS
-  - Wazuh
-  - Kuma

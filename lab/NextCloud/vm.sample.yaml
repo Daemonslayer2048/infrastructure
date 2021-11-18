@@ -5,7 +5,11 @@ vm-name: "cloud"
 cpu: 8
 mem: 16384
 disk0-size: "100G"
-tags: "NextCloud"
+tags:
+  - key: "role"
+    value: "NextCloud"
+  - key: "timezone"
+    value: "America/Alaska"
 pool: "Services"
 unifi-note: "NextCloud VM"
 desc: |
